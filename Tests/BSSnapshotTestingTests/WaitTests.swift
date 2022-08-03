@@ -1,5 +1,5 @@
 import XCTest
-@testable import SnapshotTesting
+@testable import BSSnapshotTesting
 
 class WaitTests: XCTestCase {
   func testWait() {

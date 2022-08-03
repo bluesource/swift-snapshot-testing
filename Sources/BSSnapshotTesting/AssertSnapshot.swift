@@ -303,7 +303,7 @@ public func verifySnapshot<Value, Format>(
 
 // MARK: - Private
 
-private let counterQueue = DispatchQueue(label: "co.pointfree.SnapshotTesting.counter")
+private let counterQueue = DispatchQueue(label: "com.bluesource.BSSnapshotTesting.counter")
 private var counterMap: [URL: Int] = [:]
 
 func sanitizePathComponent(_ string: String) -> String {

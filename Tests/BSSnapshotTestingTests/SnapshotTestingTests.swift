@@ -17,7 +17,7 @@ import UIKit.UIView
 #endif
 import XCTest
 
-@testable import SnapshotTesting
+@testable import BSSnapshotTesting
 
 final class SnapshotTestingTests: XCTestCase {
   override func setUp() {
@@ -1073,10 +1073,10 @@ final class SnapshotTestingTests: XCTestCase {
 
   @available(*, deprecated)
   func testIsRecordingProxy() {
-    SnapshotTesting.record = true
+    BSSnapshotTesting.record = true
     XCTAssertEqual(isRecording, true)
 
-    SnapshotTesting.record = false
+    BSSnapshotTesting.record = false
     XCTAssertEqual(isRecording, false)
   }
 }

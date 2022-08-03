@@ -1,4 +1,4 @@
-@testable import SnapshotTesting
+@testable import BSSnapshotTesting
 import XCTest
 
 #if os(iOS)

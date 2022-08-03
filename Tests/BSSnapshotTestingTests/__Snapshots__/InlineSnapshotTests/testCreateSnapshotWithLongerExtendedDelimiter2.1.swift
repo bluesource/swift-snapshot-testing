@@ -1,5 +1,5 @@
 import XCTest
-@testable import SnapshotTesting
+@testable import BSSnapshotTesting
 extension InlineSnapshotsValidityTests {
   func testCreateSnapshotWithLongerExtendedDelimiter2() {
     let diffable = #######"""

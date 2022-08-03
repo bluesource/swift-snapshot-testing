@@ -1,5 +1,5 @@
 import XCTest
-@testable import SnapshotTestingTests
+@testable import BSSnapshotTestingTests
 
 XCTMain([
   testCase(SnapshotTestingTests.allTests),

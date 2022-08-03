@@ -25,7 +25,7 @@ extension Diffing where Value == UIImage {
       fromData: { UIImage(data: $0, scale: imageScale)! }
     ) { old, new in
       guard !compare(old, new, precision: precision, subpixelThreshold: subpixelThreshold) else { return nil }
-      let difference = SnapshotTesting.diff(old, new)
+      let difference = BSSnapshotTesting.diff(old, new)
       let message = new.size == old.size
         ? "Newly-taken snapshot does not match reference."
         : "Newly-taken snapshot@\(new.size) does not match reference@\(old.size)."

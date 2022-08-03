@@ -1,5 +1,5 @@
 import XCTest
-@testable import SnapshotTesting
+@testable import BSSnapshotTesting
 
 class InlineSnapshotTests: XCTestCase {
 
@@ -494,7 +494,7 @@ func assertSnapshot(source: String, diffable: String, record: Bool = false, file
   let indentedSource = source.split(separator: "\n").map { "    " + $0 }.joined(separator: "\n")
   let decoratedCode = ########"""
   import XCTest
-  @testable import SnapshotTesting
+  @testable import BSSnapshotTesting
   extension InlineSnapshotsValidityTests {
     func \########(testName) {
       let diffable = #######"""
@@ -514,7 +514,7 @@ func assertSnapshot(source: String, diffable: String, diffable2: String, record:
   let indentedSource = source.split(separator: "\n").map { "    " + $0 }.joined(separator: "\n")
   let decoratedCode = ########"""
   import XCTest
-  @testable import SnapshotTesting
+  @testable import BSSnapshotTesting
   extension InlineSnapshotsValidityTests {
     func \########(testName) {
       let diffable = #######"""
