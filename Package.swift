@@ -3,7 +3,7 @@ import Foundation
 import PackageDescription
 
 let package = Package(
-  name: "SnapshotTesting",
+  name: "BSSnapshotTesting",
   platforms: [
     .iOS(.v11),
     .macOS(.v10_10),
@@ -11,16 +11,16 @@ let package = Package(
   ],
   products: [
     .library(
-      name: "SnapshotTesting",
-      targets: ["SnapshotTesting"]),
+      name: "BSSnapshotTesting",
+      targets: ["BSSnapshotTesting"]),
   ],
   targets: [
     .target(
-      name: "SnapshotTesting",
+      name: "BSSnapshotTesting",
       dependencies: []),
     .testTarget(
-      name: "SnapshotTestingTests",
-      dependencies: ["SnapshotTesting"]),
+      name: "BSSnapshotTestingTests",
+      dependencies: ["BSSnapshotTesting"]),
   ]
 )
 
